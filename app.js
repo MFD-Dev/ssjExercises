@@ -61,16 +61,16 @@
 
 //     When you’re comfortable, repeat it once more without looking at an example.
 
-var shoe = {
-    size: 5,
-    bigger: function() {
-        var size = this.size += 1;
-        console.log('I wear ' + bigger)
-    },
-    smaller: function() {
-        this.size -= 1;
-    }
-}
+// var shoe = {
+//     size: 5,
+//     bigger: function() {
+//         var size = this.size += 1;
+//         console.log('I wear ' + bigger)
+//     },
+//     smaller: function() {
+//         this.size -= 1;
+//     }
+// }
 // console.log(shoe.bigger)
 
 // 2.    Create a div whose background turns green when you click on the div.
@@ -79,9 +79,9 @@ var shoe = {
 
 //     When you’re comfortable, repeat it once more without looking at an example.
 
-document.getElementById('mydiv').onclick = function () {
-    this.style.color = 'red';
-}
+// document.getElementById('mydiv').onclick = function () {
+//     this.style.color = 'red';
+// }
 
 
 // document.getElementById('btn').onclick = function () {
@@ -270,6 +270,37 @@ document.getElementById('mydiv').onclick = function () {
 //     Using push and pop, add and remove things from the end of that array, and show the resulting array on screen.
 
 //     Try push and pop each 3 times.
+
+var newArr = ['cars', ' shoes', ' shirts']
+newArr.pop();
+console.log('Hello there ' + newArr)
+newArr.push(' shirts', ' collars')
+console.log('Hello group ' + newArr)
+
+newArr.shift()
+console.log('Hello ' + newArr)
+newArr.unshift(' newcars', ' oldcars')
+console.log('Hello ' + newArr)
+
+//3.
+document.getElementById('output').innerHTML = newArr.reverse();
+
+
+// function myReverse(str) {
+//     for (let i = 0; i < str.length; i++) {
+//         str.reverse
+//     }
+// }
+
+// myReverse(newArr)
+// function revFunction(str) {
+//     let reverse = str.split("").join().reverse("");
+//     return str === reversed
+// }
+// console.log(revFunction('Hello'))
+// revFunction('Hello')
+
+
 
 // 2.    Create an array with whatever you want to put in it.
 
