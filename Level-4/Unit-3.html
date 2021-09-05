@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<div id="output"></div>
+
+<script>
+
+// 1.    Create an array with whatever you want to put in it.
+
+//     Using push and pop, add and remove things from the end of that array, and show the resulting array on screen.
+
+//     Try push and pop each 3 times.
+
+var newArr = ['cars', ' shoes', ' shirts']
+newArr.pop();
+console.log('Hello there ' + newArr)
+newArr.push(' shirts', ' collars')
+console.log('Hello group ' + newArr)
+
+newArr.shift()
+console.log('Hello ' + newArr)
+newArr.unshift(' newcars', ' oldcars')
+console.log('Hello ' + newArr)
+
+//3.
+document.getElementById('output').innerHTML = newArr.reverse();
+
+
+// function myReverse(str) {
+//     for (let i = 0; i < str.length; i++) {
+//         str.reverse
+//     }
+// }
+
+// myReverse(newArr)
+// function revFunction(str) {
+//     let reverse = str.split("").join().reverse("");
+//     return str === reversed
+// }
+// console.log(revFunction('Hello'))
+// revFunction('Hello')
+
+
+
+// 2.    Create an array with whatever you want to put in it.
+
+//     Using unshift and shift, add and remove things from the beginning of that array, and show the resulting array on screen.
+
+//     Try unshift and shift each 3 times.
+
+//  3.   Using any references you’d like, figure out how to reverse the order of the things in an array.
+
+//     Create an array, reverse it, and show it in a div or span.
+
+
+</script>
+</body>
+</html>
