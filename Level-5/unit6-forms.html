@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+  <!-- Create a div that says the color of a car. (For example, it might say “Car color: red”.)
+
+    Create a set of radio buttons that can change the car’s color to red, green, or blue.
+
+    Remember to give the radio buttons the same name since you want them to be in the same group. -->
+
 
 </body>
 </html>
@@ -33,8 +39,37 @@
     	else{
     		console.log('unchecked');
     	}
-    };
-    </script> -->
+    };                  
+     </script> 
+    -->
+<!--  answer  -->
+  
+<!---
+<div id="mydiv">
+    <label for="" id="label">
+        <input type="checkbox" name="" id="mycheckbox">
+        Check this
+    </label>
+</div>
+
+<script>
+    function changeColor() {
+        if(this.checked){
+            // document.body.style.backgroundColor = 'yellow';
+            document.getElementById('mydiv').style.backgroundColor = 'yellow';
+            console.log('checked');
+        }
+        else{
+            document.getElementById('mydiv').style.backgroundColor = 'red';
+            console.log('unchecked');
+        }
+    }
+    document.getElementById('mycheckbox').onclick = changeColor;
+    
+</script>
+
+</script> 
+-->
 
 <!-- 2.    Premium option checkbox
 
@@ -45,6 +80,77 @@
     When the box is checked, add the checkbox value to the price, and when it’s unchecked, subtract the checkbox value from the price.
 
     Remember to convert the checkbox value from a string to a number. -->
+
+    <!-- Answer start -->
+    <!-- 
+        <div>
+    Total price: $<span id="price"></span>
+</div>
+
+<form action="" autocomplete="off">
+    <label for="">
+        <input type="checkbox" name="" id="premium" value="5">
+        Add premium $5
+    </label>
+</form>
+
+<script>
+    var price = 50;
+    var priceSpan = document.getElementById('price');
+    priceSpan.innerHTML = price
+
+    function handleCheckbox() {
+        var premiumPrice = Number(this.value)
+        if(this.checked){
+            price += premiumPrice
+            document.body.style.backgroundColor = 'green'
+        }
+        else{
+            price -= premiumPrice
+            document.body.style.backgroundColor = 'red'
+        }
+        priceSpan.innerHTML = price
+    }
+
+    document.getElementById('premium').onclick = handleCheckbox;
+</script>
+     -->
+     <!-- 
+         <div>
+    Total Price: $<span id="price"></span>
+</div>
+
+<form action="" id="form">
+    <label for="" id="label">
+        <input type="checkbox" name="" id="premium" value="5">
+        Premium upgrade $5
+    </label>
+</form>
+
+<script>
+    var price = 50;
+    var priceSpan = document.getElementById('price');
+    priceSpan.innerHTML = price;
+    
+    function handleCheck() {
+        var premiumPrice = Number(this.value)
+            if(this.checked){
+                price += premiumPrice
+                document.body.style.backgroundColor = 'green';
+            }
+            else{
+                price -= premiumPrice
+                document.body.style.backgroundColor = 'white'
+            }
+            priceSpan.innerHTML = price;
+    }
+
+    document.getElementById('premium').onclick = handleCheck;
+</script>
+      -->
+
+    <!-- Answer end   -->
+
 
 <!-- 3.    Basic radio buttons
 
@@ -75,6 +181,40 @@
     Create a set of radio buttons that can change the car’s color to red, green, or blue.
 
     Remember to give the radio buttons the same name since you want them to be in the same group. -->
+
+    <!-- Answer start -->
+    <!-- 
+        <div id="carColor">
+    Car color: <span id="color"></span>
+</div>
+<label for="">
+    Red:
+    <input type="radio" qty=1 name="red" id="redbtn" value="red">
+    Green:
+    <input type="radio" qty=1 name="green" id="greenbtn" value="green">
+    Blue:
+    <input type="radio" qty=1 name="blue" id="bluebtn" value="blue">
+</label>
+
+<script>
+    document.getElementById('redbtn').onclick = function(){
+        document.body.style.backgroundColor = 'red'
+        color.innerHTML = 'Red'
+        color.style.color =  'white'
+    }
+    document.getElementById('greenbtn').onclick = function(){
+        document.body.style.backgroundColor = 'green'
+        color.innerHTML = 'Green'
+        color.style.color =  'white'
+    }
+    document.getElementById('bluebtn').onclick = function(){
+        document.body.style.backgroundColor = 'blue'
+        color.innerHTML = 'Blue'
+        color.style.color =  'white'
+    }
+</script>
+     -->
+    <!-- Answer end -->
 
 <!-- 5.    A basic select dropdown
 
